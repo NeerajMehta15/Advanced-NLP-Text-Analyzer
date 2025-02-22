@@ -1,3 +1,7 @@
+from .base_processor import BaseProcessor
+from sklearn.feature_extraction.text import TfidfVectorizer
+from typing import List, Tupl
+
 class KeywordProcessor(BaseProcessor):
     """Processor for keyword extraction."""
     

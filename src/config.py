@@ -1,15 +1,16 @@
+
 from pathlib import Path
 
-class config:
-    """Configuration class for the application."""
-
-    #Model settings
+class Config:
+    """Configuration settings for the NLP analyzer."""
+    
+    # Model settings
     SPACY_MODEL = "en_core_web_md"
-
-    #File path
+    
+    # File paths
     BASE_DIR = Path(__file__).parent.parent
-    OUT_PUT = BASE_DIR / "output"
-
+    OUTPUT_DIR = BASE_DIR / "output"
+    
     # Analysis settings
     DEFAULT_NUM_KEYWORDS = 5
     DEFAULT_NUM_SUMMARY_SENTENCES = 3
